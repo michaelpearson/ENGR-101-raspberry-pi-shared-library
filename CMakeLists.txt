@@ -20,7 +20,7 @@ include_directories(lib/camera)
 include_directories(lib/PIGPIO)
 
 
-link_directories(/home/michael/Desktop/rpi/camera_test/lib/camera/lib/)
+link_directories(/home/michael/Desktop/rpi/ENGR-101-raspberry-pi-shared-library/lib/camera/lib/)
 
 add_library(engr101library SHARED main.cpp
         lib/camera/camera.cpp
@@ -28,4 +28,11 @@ add_library(engr101library SHARED main.cpp
         lib/PIGPIO/pigpio.c
         lib/PIGPIO/command.c)
 
-target_link_libraries(engr101library pthread rt libmmal_core.so libmmal_util.so libmmal_vc_client.so libvcos.so libbcm_host.so)
+target_link_libraries(engr101library
+        pthread
+        rt
+        libmmal_core.so
+        libmmal_util.so
+        libmmal_vc_client.so
+        libvcos.so
+        libbcm_host.so)
