@@ -17,7 +17,7 @@ include_directories(lib/camera/include)
 include_directories(lib/camera/include/interface/vcos/pthreads)
 include_directories(lib/camera/include/interface/vmcs_host/linux)
 include_directories(lib/camera)
-include_directories(lib/PIGPIO)
+include_directories(lib/wiringPi/wiringPi)
 
 
 link_directories(/home/michael/Desktop/rpi/ENGR-101-raspberry-pi-shared-library/lib/camera/lib/)
@@ -25,8 +25,7 @@ link_directories(/home/michael/Desktop/rpi/ENGR-101-raspberry-pi-shared-library/
 add_library(engr101library SHARED main.cpp
         lib/camera/camera.cpp
         lib/camera/cameracontrol.cpp
-        lib/PIGPIO/pigpio.c
-        lib/PIGPIO/command.c)
+        lib/wiringPi/wiringPi/wiringPi.c)
 
 target_link_libraries(engr101library
         pthread
@@ -36,3 +35,4 @@ target_link_libraries(engr101library
         libmmal_vc_client.so
         libvcos.so
         libbcm_host.so)
+

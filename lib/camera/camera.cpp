@@ -321,7 +321,7 @@ bool CCamera::Init(int width, int height, int framerate, int num_levels, bool do
 	memcpy(Outputs,outputs,sizeof(outputs));
 
 	//return success
-	printf("Camera successfully created\n");
+	//printf("Camera successfully created\n");
 	return true;
 
 error:
@@ -396,7 +396,7 @@ CCameraOutput::~CCameraOutput()
 
 bool CCameraOutput::Init(int width, int height, MMAL_COMPONENT_T* input_component, int input_port_idx, bool do_argb_conversion)
 {
-	printf("Init camera output with %d/%d\n",width,height);
+	//printf("Init camera output with %d/%d\n",width,height);
 	Width = width;
 	Height = height;
 
@@ -663,7 +663,7 @@ MMAL_POOL_T* CCameraOutput::EnablePortCallbackAndCreateBufferPool(MMAL_PORT_T* p
 	//setup video port buffer and a pool to hold them
 	port->buffer_num = buffer_count;
 	port->buffer_size = port->buffer_size_recommended;
-	printf("Creating pool with %d buffers of size %d\n", port->buffer_num, port->buffer_size);
+	//printf("Creating pool with %d buffers of size %d\n", port->buffer_num, port->buffer_size);
 	buffer_pool = mmal_port_pool_create(port, port->buffer_num, port->buffer_size);
 	if (!buffer_pool)
 	{
