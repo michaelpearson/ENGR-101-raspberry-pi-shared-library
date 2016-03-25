@@ -7,8 +7,6 @@
 #include "main.h"
 
 #include <netdb.h>
-#include <netinet/in.h>
-#include <string.h>
 
 
 #define MAIN_TEXTURE_WIDTH 640 //Control Resolution from Camera
@@ -22,9 +20,6 @@ int spi;
 
 extern "C"
 {
-
-
-
     double fabs(double a) {
         return a > 0 ? a : -a;
     }
@@ -209,15 +204,6 @@ extern "C"
         }
         return 0;
     }
-
-    /**
-     * sets the duty cycle of pin to value
-     * value is a value between 0 and 1
-     */
-    void setPWM(int pin, double value) {
-        printf("Cant do that!\n");
-    }
-
 
     int labelAdcToPinNumber(int pin) {
         switch(pin) {
