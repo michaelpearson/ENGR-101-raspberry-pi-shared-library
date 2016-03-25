@@ -6,8 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/lib/camera/camera.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lib/camera/cameracontrol.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lib/camera/cameracontrol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lib/wiringPi/wiringPi/wiringPi.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lib/wiringPi/wiringPi/wiringPi.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.h" isTestSource="false" />
@@ -36,8 +34,6 @@
           <root url="file://$MODULE_DIR$/lib/camera/camera.h" />
           <root url="file://$MODULE_DIR$/lib/camera/cameracontrol.cpp" />
           <root url="file://$MODULE_DIR$/lib/camera/cameracontrol.h" />
-          <root url="file://$MODULE_DIR$/lib/wiringPi/wiringPi/wiringPi.h" />
-          <root url="file://$MODULE_DIR$/lib/wiringPi/wiringPi/wiringPi.c" />
         </excluded>
       </library>
     </orderEntry>

@@ -1,11 +1,11 @@
 /**
  * Pixel type for camera functions
  */
-struct Pixel {
+typedef struct Pixel {
     int red;
     int green;
     int blue;
-};
+} Pixel;
 
 /**
  * Returns the absolute value of the double passed in
